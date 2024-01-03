@@ -32,6 +32,10 @@ app.use("/question/api",questionRoute);
 const UserForAdmin = require("./routes/AdminRoutes/UserRoutesAdmin");
 app.use("/userauthadmin/api",UserForAdmin);
 
+// question submit
+const QuestionSubmit = require("./routes/AdminRoutes/ScoreRoutes");
+app.use("/quiz/api",QuestionSubmit)
+
 const userRoute = require("./routes/UserRoutes/userAuthRoutes");
 app.use("/user/api",userRoute)
 

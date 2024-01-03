@@ -6,9 +6,9 @@ const questionSchema = new mongoose.Schema({
         required:true
     },
     Score:Number,
-    
+
 },{timestamps:true});
 
-const questionsdb = new mongoose.model("questions",questionSchema)
+const resultdb = new mongoose.model("resultdbs",questionSchema)
 
-module.exports = questionsdb
+module.exports = resultdb
